@@ -1,0 +1,66 @@
+{
+  "timestamp": "2025-08-02T03:03:07.524Z",
+  "count": 4,
+  "errors": [
+    {
+      "id": "1754103787518_mlya1ge",
+      "timestamp": 1754103787518,
+      "type": "electron",
+      "level": "error",
+      "processType": "main",
+      "errorType": "uncaughtException",
+      "message": "Cannot read properties of undefined (reading 'debug')",
+      "stack": "TypeError: Cannot read properties of undefined (reading 'debug')\n    at PowerMonitor.<anonymous> (D:\\work\\im\\sourcecode\\im-electron\\dist-electron\\main\\appManage.js:71:21)\n    at PowerMonitor.emit (node:events:525:35)",
+      "version": "v16.17.1",
+      "platform": "win32",
+      "extra": {
+        "errorName": "TypeError"
+      }
+    },
+    {
+      "id": "1754100150361_n8r4rra",
+      "timestamp": 1754100150361,
+      "type": "electron",
+      "level": "error",
+      "processType": "main",
+      "errorType": "uncaughtException",
+      "message": "Cannot read properties of undefined (reading 'debug')",
+      "stack": "TypeError: Cannot read properties of undefined (reading 'debug')\n    at PowerMonitor.<anonymous> (D:\\work\\im\\sourcecode\\im-electron\\dist-electron\\main\\appManage.js:68:21)\n    at PowerMonitor.emit (node:events:525:35)",
+      "version": "v16.17.1",
+      "platform": "win32",
+      "extra": {
+        "errorName": "TypeError"
+      }
+    },
+    {
+      "id": "1754096526579_bwknp8k",
+      "timestamp": 1754096526579,
+      "type": "electron",
+      "level": "error",
+      "processType": "main",
+      "errorType": "uncaughtException",
+      "message": "Cannot read properties of undefined (reading 'debug')",
+      "stack": "TypeError: Cannot read properties of undefined (reading 'debug')\n    at PowerMonitor.<anonymous> (D:\\work\\im\\sourcecode\\im-electron\\dist-electron\\main\\appManage.js:71:21)\n    at PowerMonitor.emit (node:events:525:35)",
+      "version": "v16.17.1",
+      "platform": "win32",
+      "extra": {
+        "errorName": "TypeError"
+      }
+    },
+    {
+      "id": "1754092889540_n0c65d6",
+      "timestamp": 1754092889540,
+      "type": "electron",
+      "level": "error",
+      "processType": "main",
+      "errorType": "uncaughtException",
+      "message": "Cannot read properties of undefined (reading 'debug')",
+      "stack": "TypeError: Cannot read properties of undefined (reading 'debug')\n    at PowerMonitor.<anonymous> (D:\\work\\im\\sourcecode\\im-electron\\dist-electron\\main\\appManage.js:68:21)\n    at PowerMonitor.emit (node:events:525:35)",
+      "version": "v16.17.1",
+      "platform": "win32",
+      "extra": {
+        "errorName": "TypeError"
+      }
+    }
+  ]
+}

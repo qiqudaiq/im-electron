@@ -1,0 +1,21 @@
+export default {
+  system: {
+    showWindow: "顯示",
+    hideWindow: "隱藏",
+    hide: "隱藏",
+    about: "關於",
+    quit: "退出",
+    window: "窗口",
+    toggleDevTools: "調試",
+    minimize: "最小化",
+    close: "關閉",
+    copy: "複製",
+    paste: "貼上",
+    cut: "剪切",
+    undo: "撤銷",
+    redo: "重做",
+    selectAll: "全選",
+    fastKeys: "快鍵鍵",
+    magnifier_position_label: "坐標",
+  },
+};

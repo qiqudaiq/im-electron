@@ -1,0 +1,55 @@
+{
+  "appId": "com.freechat.app",
+  "productName": "FREECHAT",
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "dist/**/*",
+    "dist-electron/**/*",
+    "electron/**/*"
+  ],
+  "mac": {
+    "artifactName": "${productName}_${version}_${arch}.${ext}",
+    "target": [
+      {
+        "target": "dmg",
+        "arch": ["arm64", "x64"]
+      },
+      "dir"
+    ],
+    "icon": "build/icon.icns",
+    "hardenedRuntime": true,
+    "gatekeeperAssess": false,
+    "entitlements": "build/entitlements.mac.plist",
+    "entitlementsInherit": "build/entitlements.mac.plist",
+    "identity": "Dep Technology Limited",
+    "extendInfo": {
+      "NSAppleEventsUsageDescription": "This app needs to control system events",
+      "NSCameraUsageDescription": "This app needs camera access",
+      "NSMicrophoneUsageDescription": "This app needs microphone access"
+    }
+  },
+  "win": {
+    "artifactName": "${productName}_${version}.${ext}",
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      }
+    ],
+    "icon": "build/icon.ico"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "FREECHAT",
+    "allowElevation": true,
+    "perMachine": true,
+    "include": "./installer.nsh"
+  }
+} 

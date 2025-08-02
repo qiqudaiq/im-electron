@@ -1,0 +1,31 @@
+.transferCard_container .ant-card-head-title{
+    color: white;
+}
+
+
+
+.transferCard_box{
+    display: flex;
+    
+    
+}
+
+.transferCard_box .transferCard_right{
+    padding-left: 30px;
+}
+
+.transferCard_box .transferCard_right .transferCard_right_top{
+    color: white;
+}
+
+.transferCard_box .transferCard_right .transferCard_right_top .transfer_currency{
+    padding-left: 2px;
+}
+
+.transferCard_box .transferCard_right .transferCard_right_bottom{
+    color: white;
+}
+
+.transferCard_box img {
+    object-fit:contain
+}

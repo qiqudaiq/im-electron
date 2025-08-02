@@ -1,0 +1,9 @@
+.account-delete-card {
+  max-width: 800px;
+  margin: 24px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.account-delete-space {
+  width: 100%;
+} 

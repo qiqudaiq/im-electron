@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        cursor: default;
+      }
+
+      .logo {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+      }
+
+      .letter {
+        opacity: 0;
+        color: lightgreen;
+        display: inline-block;
+      }
+
+      .fade-in-animation {
+        animation: fade-in 4s infinite;
+      }
+
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+          color: lightgreen;
+        }
+        50% {
+          opacity: 1;
+          color: lightblue;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <span class="letter">F</span>
+      <span class="letter">R</span>
+      <span class="letter">E</span>
+      <span class="letter">E</span>
+      <span class="letter">C</span>
+      <span class="letter">H</span>
+      <span class="letter">A</span>
+      <span class="letter">T</span>
+    </div>
+
+    <script>
+      const letters = document.querySelectorAll(".letter");
+
+      function animateLetters() {
+        letters.forEach((letter, index) => {
+          setTimeout(() => {
+            letter.classList.add("fade-in-animation");
+          }, index * 300);
+        });
+      }
+
+      animateLetters();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+.prizesContainer {
+  :global {
+    .ant-table-wrapper {
+      .ant-table-thead > tr > th {
+        background-color: #f5f5f5;
+      }
+    }
+  }
+} 

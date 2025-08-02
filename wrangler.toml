@@ -1,0 +1,41 @@
+[site]
+bucket = "./dist"
+entry-point = "."
+
+# 你的项目名称，这将是你的Cloudflare Pages项目名
+name = ""
+
+# 指定构建输出目录给Pages使用
+pages_build_output_dir = "dist"
+
+# 可以指定构建命令和输出目录
+build.command = "npm run build"
+build.output = "dist"
+
+# Cloudflare账户信息配置
+# 使用API Token可以不需要每次登录
+account_id = ""  # 替换为您的Cloudflare账户ID
+
+# 配置环境变量，根据需要添加
+[env.production]
+# NODE_ENV = "production"
+
+# 自定义域名配置，如果有自定义域名
+# routes = [
+#   { pattern = "example.com/*", zone_id = "your-zone-id" }
+# ]
+
+# 配置构建缓存
+[build.upload]
+format = "service-worker"
+
+# 配置部署分支
+[env.production.build]
+# command = "yarn build"
+# cwd = "."
+# environment_variables = []
+
+# 其他自定义配置
+compatibility_date = "2023-10-30"
+compatibility_flags = []
+workers_dev = true 

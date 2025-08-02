@@ -1,0 +1,97 @@
+.animatedModal {
+  :global(.ant-modal-content) {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  :global(.ant-modal-mask) {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+  }
+}
+
+.cardContainer {
+  padding: 20px;
+  perspective: 1000px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: rotateY(-180deg);
+
+  &.show {
+    transform: rotateY(0);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.1) 100%);
+    border-radius: 20px;
+    z-index: -1;
+  }
+}
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  min-height: 365px;
+  backface-visibility: hidden;
+  background: white;
+  border-radius: 20px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    0 15px 35px rgba(0,0,0,0.1),
+    0 3px 10px rgba(0,0,0,0.07);
+  overflow: hidden;
+}
+
+.cardFront {
+  transform: rotateY(180deg);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+      circle at center,
+      rgba(255,255,255,0.2) 0%,
+      rgba(255,255,255,0) 60%
+    );
+    animation: rotate 10s linear infinite;
+  }
+}
+
+.cardBack {
+  background: white;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(79,172,254,0.1) 0%, rgba(0,242,254,0.05) 100%);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} 

@@ -1,0 +1,24 @@
+@import "tailwindcss/base";
+@import "@radix-ui/themes/styles.css";
+
+.rt-reset.rt-BaseMenuItem.rt-DropdownMenuItem {
+    color: #edeef0;
+}
+
+rt-reset rt-BaseButton rt-Button rt-r-size-1 rt-variant-surface .rt-reset.rt-BaseButton.rt-Button.rt-r-size-1.rt-variant-soft {
+    /* background-color: #cfd0d3; */
+}
+
+.rt-Flex.rt-r-display-flex.rt-r-jc-start button:first-child {
+    /* background-color: red; */
+}
+
+@tailwind components;
+@tailwind utilities;
+
+
+#viewer-list-search {
+    &::placeholder {
+        color: rgba(240, 240, 240, 0.5);
+    }
+}
