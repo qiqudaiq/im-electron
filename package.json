@@ -12,7 +12,7 @@
   },
   "scripts": {
     "dev": "vite --force --host",
-    "web-dev": "cross-env VITE_APP_WEB_ONLY=true vite --force --host",
+    "web-dev": "VITE_APP_WEB_ONLY=true vite --force --host",
     "test": "vite --force --host  --mode test",
     "prod": "vite --force --host  --mode production",
     "build": "vite build",
@@ -58,7 +58,6 @@
     "@vitejs/plugin-legacy": "^4.1.0",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.13",
-    "cross-env": "^10.0.0",
     "electron": "^22.3.27",
     "electron-builder": "^23.6.0",
     "eslint": "^8.34.0",

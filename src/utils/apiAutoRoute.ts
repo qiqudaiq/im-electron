@@ -39,7 +39,7 @@ export class ApiAutoRoute {
   private static defaultServers: ApiServerConfig[] = [
     {
       name: 'Default Server 1',
-    host: '',
+      host: '',
       priority: 1,
       region: 'global',
     }
